@@ -124,3 +124,12 @@ main {
   display: block;
   margin: auto;
 }
+
+.button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: inset 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  margin: auto;
+  display: block;
+}
