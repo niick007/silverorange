@@ -16,7 +16,7 @@ class App
         $path = $_SERVER['REQUEST_URI'];
 
         // Serve static assets.
-        if (preg_match('@^/(assets|images)(/|$)@', $path) === 1) {
+        if (preg_match('@^/(assets|images|highres-assets)(/|$)@', $path) === 1) {
             return false;
         }
 

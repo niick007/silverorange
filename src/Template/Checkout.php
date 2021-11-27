@@ -22,15 +22,15 @@ class Checkout extends Layout
                             <table class="order-summary">
                                 <thead>
                                     <tr>
-                                        <th></th>
+                                        <th>Product Image</th>
                                         <th>Item</th>
                                         <th>Quantity</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Product Thumbnail</td>
-                                        <td>Lorem Widget</td>
+                                        <td><img class="product-thumbnail" src="/highres-assets/product.jpg" alt="Lorem Product"></td>
+                                        <td>Lorem Product</td>
                                         <td>1</td>
                                     </tr>
                                 </tbody>

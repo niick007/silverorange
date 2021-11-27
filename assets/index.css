@@ -116,4 +116,11 @@ main {
 .order-summary th {
   border-bottom: 1px solid #eee;
   padding: 0.5rem;
+  text-align: center;
+}
+
+.product-thumbnail {
+  height: 2rem;
+  display: block;
+  margin: auto;
 }
