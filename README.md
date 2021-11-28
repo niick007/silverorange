@@ -163,3 +163,7 @@ database.
 
 The DSN string in `src/Config.php` may need to be modified if you use a
 different database or do not use PostgreSQL with Docker Compose.
+
+## Import Data Instructions
+
+The json posts from database can be imported to database using the following link (http://localhost:8000/import).
