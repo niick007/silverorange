@@ -25,4 +25,11 @@ class Post
         $sql = "SELECT p.id, p.title, p.body, a.full_name FROM Posts as p, Authors as a WHERE p.id = '$id'";
         return $this->db->query($sql)->fetch();
     }
+
+    // This method selects all posts from the database
+    public function getAllPost(): array
+    {
+        $sql = "SELECT p.id, p.title, p.created_at FROM Posts as p ORDER BY p.created_at DESC";
+        return $this->db->query($sql)->fetchAll();
+    }
 }

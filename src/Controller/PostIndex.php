@@ -3,6 +3,7 @@
 namespace silverorange\DevTest\Controller;
 
 use silverorange\DevTest\Context;
+use silverorange\DevTest\Model;
 use silverorange\DevTest\Template;
 
 class PostIndex extends Controller
@@ -13,6 +14,7 @@ class PostIndex extends Controller
     {
         $context = new Context();
         $context->title = 'Posts';
+        $context->setPosts($this->posts);
         return $context;
     }
 
@@ -24,6 +26,7 @@ class PostIndex extends Controller
     protected function loadData(): void
     {
         // TODO: Load posts from database here.
-        $this->posts = [];
+        $post = new Model\Post($this->db);
+        $this->posts = $post->getAllPost();
     }
 }

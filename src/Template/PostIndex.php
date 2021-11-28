@@ -9,9 +9,18 @@ class PostIndex extends Layout
     protected function renderPage(Context $context): string
     {
         // @codingStandardsIgnoreStart
+        $posts = $context->getPosts();
+        $data = "";
+        foreach($posts as $post){
+            $data .= "<div class='post-card'>
+                <a href='/posts/".$post["id"]."'>".$post["title"]."</a>
+                <p>Published On: ".$post["created_at"]."</p>
+            </div>";
+        }
         return <<<HTML
-<p>SHOW ALL THE POSTS HERE</p>
-HTML;
+            <h1>Articles</h1>
+            {$data}
+        HTML;
         // @codingStandardsIgnoreEnd
     }
 }

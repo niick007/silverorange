@@ -133,3 +133,14 @@ main {
   margin: auto;
   display: block;
 }
+
+.post-card {
+  padding: 1rem 1.5rem;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px -1px #656565;
+}
+
+.post-card p {
+  margin-bottom: 0px;
+}
